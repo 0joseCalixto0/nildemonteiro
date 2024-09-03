@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor-principal: rgb(0, 0, 0);
+    --cor-secundaria: #708871;
+    --cor-terciaria: #f8e8d1;
+    --cor-botao: #167BF7;
+    --fonte-principal: 'inter';
+    --fonte-secundaria: 'Caladea';
+    --cor-botao: #167bf7;
+    --tamanho-fonte-texto: 1.3rem;
+    --expessura-texto: 400;
+}
+
+body {
+    background-size: cover;
+    background-color: #528654;
+    /*background: rgb(9,29,6);
+background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgba(62,144,56,1) 100%);
+*/}
+
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform-style: unset;
+    transition: all 1s;
+
+
+
+
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 4s;
+    transform: translateX(-100%);
+
+}
+
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 4s;
+
+}
+
+.apre {
+    background-image: url("./assets/palmeirasnilde\ blur.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+
+
+
+
+}
+
+.container {
+    filter: unset;
+    height: max-content;
+    display: grid;
+    padding: 10%;
+    grid-template-columns: 50% 50%;
+    
+
+
+
+
+
+
+
+
+}
+
+
+
+.cabecalho1 {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    background: var(--cor-terciaria);
+    position: fixed;
+    opacity: ;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    z-index: 10;
+
+
+}
+
+.cabe_inicio {
+    width: 50%;
+    align-items: center;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 5rem;
+    margin: 4rem 1rem 4.3rem 5rem;
+
+
+
+}
+
+.logo_footer {
+    width: 5rem;
+    margin: 4rem 1rem 3rem 5rem;
+    border-radius: 50%;
+
+
+}
+
+.cabe_nome {
+
+    color: var(--cor-principal);
+    padding: 5px;
+    font-family: "";
+    gap: 2.rem;
+
+
+}
+
+.cabe_links {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin: 0.2rem;
+
+
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 1rem;
+
+
+
+}
+
+.links:hover {
+    border-radius: 10px;
+    text-decoration: underline;
+
+}
+
+
+.cont_bot {
+    background-color: var(--cor-botao);
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 40rem;
+    height: 40rem;
+    box-shadow: inset 5em 1em gold;
+    
+
+}
+
+.cont_bot:hover {
+    background-color: #167bf79e;
+}
+
+.cont_bot_2 {
+    background-color: #ffffff00;
+    border: 2px solid var(--cor-principal);
+
+
+
+}
+
+.cont_bot_2:hover {
+    box-shadow: 0 0 20px var(--cor-botao), inset 0 0 20px var(--cor-botao);
+}
+
+
+
+.img_combo {
+    margin: 2em 0;
+}
+
+
+
+.img_escola1:hove {
+
+    transition: all 0s;
+    transform: scale(100%);
+
+
+
+
+
+}
+
+
+.img_telas {
+    width: 80%;
+}
+
+
+
+.container_box {
+    margin: 3% 12%;
+    background-color: var(--cor-terciaria);
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2%;
+    position: relative;
+    
+    box-shadow: inset 0 0 2em #cabca9fd,
+    0 0 1em #cabca9fd;
+
+
+}
+
+
+.cont_aviso {
+    font-size: 150%;
+    color: var(--cor-principal);
+    font-weight: var(--expessura-texto);
+    align-items: center;
+    text-align: left;
+    margin: 2rem;
+
+}
+
+.container_title {
+    font-size: 300%;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    align-items: center;
+    text-align: left;
+    margin: 2rem;
+
+}
+
+.feixe {
+    display: flex;
+    background-color: var(--cor-secundaria);
+    width: 6rem;
+    height: 0.5rem;
+    align-items: center;
+    margin: 2rem;
+    position: ;
+
+
+}
+
+.feixe2 {
+    display: flex;
+    background-color: var(--cor-secundaria);
+    width: 6rem;
+    height: 0.5rem;
+    align-items: center;
+    margin: 2rem 3rem 3rem 17rem;
+    position: ;
+
+
+
+}
+
+.feixe3 {
+    display: flex;
+    background-color: var(--cor-terciaria);
+    width: 6rem;
+    height: 0.5rem;
+    align-items: center;
+
+    position: ;
+
+
+
+}
+
+.second {
+    background: var(--cor-secundaria);
+    background-image: url("./assets/palmeirasnilde\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    animation: ;
+
+}
+
+.tres {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: ;
+    border: #FEF3E2;
+    border
+}
+
+.mapa iframe {
+    width: 32rem;
+    height: 32rem;
+    margin: 1rem;
+
+
+
+
+
+}
+
+
+.contato {
+    background-color: var(--cor-secundaria);
+    margin: 2rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50rem;
+    height: 20rem;
+    text-align: center;
+}
+
+.contato_text {
+    display: flex;
+    text-align: ;
+    font-size: var(--tamanho-fonte-text);
+    font-weight: var(--expessura-texto);
+    color: var(--cor-principal);
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.descricao_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.test {
+    background-color: #dadada34;
+}
+
+.one {
+    
+    margin: 4rem;
+    align-items: center;
+    filter: unset;
+    height: max-content;
+    display: grid;
+    padding: 10%;
+    grid-template-columns: 40% 60%;
+
+
+
+
+}
+
+.descricao_container {
+    padding: 2rem;
+    background-color: var(--cor-terciaria);
+    
+    width: 40rem;
+    height: 35rem;
+    text-align: center;
+    align-items: cente;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 0% 0% 0% 0%;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+}
+
+.img_escola1 {
+    width: 20rem;
+    height: 24rem;
+    margin: rem;
+    
+
+    border-radius: 0% 0% 0% 0%;
+
+
+
+
+
+
+
+}
+
+.descricao_container2 {
+    padding: 6rem;
+
+    background-color: #fef3e2da;
+    margin: 5rem;
+    width: 30rem;
+    height: 15rem;
+    text-align: center;
+    flex-direction: ;
+
+
+}
+
+.descricao_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.descricao_text {
+    text-align: left;
+    font-size: var(--tamanho-fonte-texto);
+    font-weight: var(--expessura-texto);
+    color: var(--cor-principal);
+    margin: 2rem;
+    justify-content: space-between;
+
+}
+
+.icon {
+    height: 1rem;
+    margin: 1rem 0rem 0rem 1rem;
+    color: var(--cor-secundaria);
+    border-radius: ;
+
+
+
+}
+
+.second_bot {
+    display: inline-block;
+    margin-top: 1rem;
+
+
+}
+
+.services {
+    display: flex;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 10rem;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.services_cont {
+    width: 15rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+
+
+
+
+}
+
+.services_cont:hover {
+    transition: all 2s;
+    transform: scale(150%);
+
+    background-color: #5d705eb2;
+}
+
+.img_serv {
+    width: 7rem;
+    border-radius: 100%;
+    align-items: center;
+    margin: rem;
+    position: static;
+}
+
+.services_list {
+    position: ;
+    padding: rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+
+
+}
+
+.services_title {
+    font-size: 3rem;
+    color: var(--cor-principal);
+    font-weight: 700;
+    margin: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+
+
+
+
+}
+
+.services_cont_tit {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.services_cont_text {
+    font-size: var(--tamanho-fonte-texto);
+    font-weight: var(--expessura-texto);
+    text-align: center;
+    margin: rem;
+}
+
+.footer {
+
+    text-align: center;
+    display: grid;
+
+
+
+}
+
+.footer_list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+
+
+
+}
+
+.links_title {
+    display: flex;
+    width: min-content;
+    margin-right: 10%;
+    align-items: center;
+
+}
+
+.footer_title {
+    font-size: 130%;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+
+
+}
+
+
+
+.footer_link {
+    text-decoration: none;
+    padding: 2rem 0.5rem;
+
+}
+
+.footer_links {
+    display: flex;
+    margin: 3rem;
+
+}
+
+.footer_text {
+    margin: 1.5rem 15%;
+    size: var(--tamanho-fonte-text);
+    font-family: var(--fonte-secundaria);
+}
+
+.link_text {
+    color: var(--cor-principal);
+    font-size: var(--tamanho-fonte-texto);
+    text-decoration: none;
+
+}
+
+.footer_link a:hover {
+    color: var(--cor-botao);
+}
+
+@media (max-width:1027px) {
+    .mapa iframe {
+        width: 100%;
+        height: 50%;
+    }
+
+    .apre {
+        flex-direction: column-reverse;
+        padding: 5% 7%;
+        width: auto;
+        text-align: center;
+
+
+    }
+
+    .csva {
+        width: 100%;
+    }
+
+    .cabecalho {
+        padding: 10% 30%;
+
+    }
+}
+media (max-width:1440px) {
+
+    .one {
+        margin-top: ;
+        margin:rem ;
+        padding: 1rem;
+        
+        
+
+    }
+
+    .descricao_container {
+        justify-content: center;
+        margin-right: 6rem;
+        width: 37rem;
+        text-align: center;
+
+    }
+
+    .descricao_text{
+        text-align: center;
+    }
+
+    
+}
