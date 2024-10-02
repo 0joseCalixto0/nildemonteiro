@@ -8,8 +8,9 @@
 
 :root {
     --cor-principal: rgb(0, 0, 0);
-    --cor-secundaria: #708871;
+    --cor-secundaria: #528669;
     --cor-terciaria: #f8e8d1;
+    --cor-quaternaria:rgb(14, 138, 80) ;
     --cor-botao: #167BF7;
     --fonte-principal: 'inter';
     --fonte-secundaria: 'Caladea';
@@ -20,11 +21,14 @@
 
 body {
     background-size: cover;
-    background-color: #528654;
-    /*background: rgb(9,29,6);
+    background-color: var(--cor-secundaria);
+    /*background: rgb(9,29,6) #708871;
 background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgba(62,144,56,1) 100%);
 */}
 
+.logo_title{
+    border-radius: 100%;
+}
 
 
 .hidden {
@@ -71,8 +75,8 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     filter: blur(3px);
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height:fit-content;
 
 
 
@@ -85,6 +89,7 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     height: max-content;
     display: grid;
     padding: 10%;
+    align-items: center;
     grid-template-columns: 50% 50%;
     
 
@@ -99,17 +104,18 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 
 
 
-.cabecalho1 {
+.cabecalho {
     display: flex;
     gap: 10%;
     align-items: center;
     background: var(--cor-terciaria);
     position: fixed;
-    opacity: ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
     z-index: 10;
+    
+    
 
 
 }
@@ -124,25 +130,18 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 
 .logo {
     width: 5rem;
-    margin: 4rem 1rem 4.3rem 5rem;
+    margin: 0rem 0rem 0.6rem 5rem;
 
 
 
 }
 
-.logo_footer {
-    width: 5rem;
-    margin: 4rem 1rem 3rem 5rem;
-    border-radius: 50%;
 
-
-}
-
-.cabe_nome {
-
+.cabe_tit {
+    height: auto;
     color: var(--cor-principal);
     padding: 5px;
-    font-family: "";
+    font-family: var(--fonte-secundaria);
     gap: 2.rem;
 
 
@@ -153,6 +152,7 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     display: flex;
     flex-direction: row;
     margin: 0.2rem;
+    
 
 
 
@@ -173,8 +173,8 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 }
 
 .links:hover {
-    border-radius: 10px;
-    text-decoration: underline;
+    color: var(--cor-quaternaria);
+    text-decoration: none;
 
 }
 
@@ -279,7 +279,7 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     height: 0.5rem;
     align-items: center;
     margin: 2rem;
-    position: ;
+    
 
 
 }
@@ -290,8 +290,8 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     width: 6rem;
     height: 0.5rem;
     align-items: center;
-    margin: 2rem 3rem 3rem 17rem;
-    position: ;
+    margin: 2rem 3rem 3rem 15.2rem;
+    
 
 
 
@@ -304,7 +304,7 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     height: 0.5rem;
     align-items: center;
 
-    position: ;
+   
 
 
 
@@ -317,61 +317,11 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     background-size: cover;
     background-position: center;
     align-items: center;
-    animation: ;
-
-}
-
-.tres {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background-color: ;
-    border: #FEF3E2;
-    border
-}
-
-.mapa iframe {
-    width: 32rem;
-    height: 32rem;
-    margin: 1rem;
-
-
-
-
+    
 
 }
 
 
-.contato {
-    background-color: var(--cor-secundaria);
-    margin: 2rem;
-    margin-left: 10rem;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 50rem;
-    height: 20rem;
-    text-align: center;
-}
-
-.contato_text {
-    display: flex;
-    text-align: ;
-    font-size: var(--tamanho-fonte-text);
-    font-weight: var(--expessura-texto);
-    color: var(--cor-principal);
-    margin: 1rem;
-    padding: 1rem;
-
-}
-
-.descricao_title {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin: 1rem;
-    font-family: var(--fonte-secundaria);
-
-}
 
 .test {
     background-color: #dadada34;
@@ -379,13 +329,14 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 
 .one {
     
-    margin: 4rem;
+    margin: 5%;
     align-items: center;
     filter: unset;
     height: max-content;
     display: grid;
-    padding: 10%;
-    grid-template-columns: 40% 60%;
+    padding: 5%;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
 
 
 
@@ -395,13 +346,12 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 .descricao_container {
     padding: 2rem;
     background-color: var(--cor-terciaria);
-    
-    width: 40rem;
-    height: 35rem;
+    width: 90%;
+    height: 70%;
     text-align: center;
-    align-items: cente;
+    align-items: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.26);
-    border-radius: 0% 0% 0% 0%;
+    border-radius: 2%;
     justify-content: space-between;
     gap: 1rem;
 
@@ -409,12 +359,13 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 }
 
 .img_escola1 {
-    width: 20rem;
-    height: 24rem;
+    width: 90%;
+    height: 80%;
     margin: rem;
-    
+    border: #12633d 0.5rem;
 
-    border-radius: 0% 0% 0% 0%;
+
+    border-radius: 2%;
 
 
 
@@ -426,13 +377,12 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 
 .descricao_container2 {
     padding: 6rem;
-
     background-color: #fef3e2da;
     margin: 5rem;
     width: 30rem;
     height: 15rem;
-    text-align: center;
-    flex-direction: ;
+    text-align: left;
+    border-radius: 2%;
 
 
 }
@@ -450,20 +400,12 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     font-size: var(--tamanho-fonte-texto);
     font-weight: var(--expessura-texto);
     color: var(--cor-principal);
-    margin: 2rem;
-    justify-content: space-between;
+    margin: rem;
+    text-align: left;
 
 }
 
-.icon {
-    height: 1rem;
-    margin: 1rem 0rem 0rem 1rem;
-    color: var(--cor-secundaria);
-    border-radius: ;
 
-
-
-}
 
 .second_bot {
     display: inline-block;
@@ -504,16 +446,18 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     transition: all 2s;
     transform: scale(150%);
 
-    background-color: #5d705eb2;
+    background-color: #5d7069b2;
 }
 
 .img_serv {
-    width: 7rem;
-    border-radius: 100%;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 15%;
     align-items: center;
     margin: rem;
     position: static;
 }
+
 
 .services_list {
     position: ;
@@ -558,6 +502,95 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     margin: rem;
 }
 
+.container3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    filter: unset;
+    height: max-content;
+    display: grid;
+    padding: 10%;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.mapa iframe {
+    width: 32rem;
+    height: 32rem;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px #0000006c;
+    border-radius: 5rem 5rem 5rem 5rem;
+
+
+
+
+
+}
+
+.contatogeral{
+    width: 70rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    background-color: var(--cor-terciaria) ;
+    
+}
+
+
+.contato {
+    background-color: var(-cor-terciaria);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 23rem;
+    height: 30rem;
+    text-align: center;
+    
+}
+
+.icon {
+    height: 2rem;
+    margin: 0rem 0rem 1rem 0rem;
+    color: var(--cor-secundaria);
+    border-radius: ;
+
+}
+
+
+
+.contato_text {
+    display: flex;
+    text-align: center;
+    font-size: var(--tamanho-fonte-text);
+    font-weight: var(--expessura-texto);
+    color: var(--cor-principal);
+    margin: 1rem;
+    padding: 0rem 1rem ;
+    font-size: 2rem;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #0000006c;
+    
+    align-self: center;
+   
+}
+
+.siteclick:hover {
+    color: var(--cor-quaternaria);
+}
+
+
+.contato_title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
 .footer {
 
     text-align: center;
@@ -572,6 +605,7 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     justify-content: center;
     list-style-type: none;
     width: 100%;
+    height: 10rem;
 
 
 
@@ -589,6 +623,15 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
     font-size: 130%;
     font-weight: 700;
     font-family: var(--fonte-secundaria);
+
+
+}
+
+.logo_footer {
+    width: 5rem;
+    margin: 4rem 1rem 4rem 5rem;
+    border: solid 0.5rem #419766;
+    border-radius: 100%;
 
 
 }
@@ -621,14 +664,18 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 }
 
 .footer_link a:hover {
-    color: var(--cor-botao);
+    color: rgb(27, 51, 42);
 }
 
 @media (max-width:1027px) {
-    .mapa iframe {
-        width: 100%;
-        height: 50%;
+    .contatogeral{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
     }
+
+  
 
     .apre {
         flex-direction: column-reverse;
@@ -639,16 +686,13 @@ background: linear-gradient(180deg, rgba(9,29,6,1) 0%, rgba(38,96,50,1) 35%, rgb
 
     }
 
-    .csva {
-        width: 100%;
-    }
-
+   
     .cabecalho {
-        padding: 10% 30%;
+        auto
 
     }
 }
-media (max-width:1440px) {
+@media (max-width:1440px) {
 
     .one {
         margin-top: ;
@@ -662,7 +706,7 @@ media (max-width:1440px) {
     .descricao_container {
         justify-content: center;
         margin-right: 6rem;
-        width: 37rem;
+        width: rem;
         text-align: center;
 
     }
@@ -673,3 +717,4 @@ media (max-width:1440px) {
 
     
 }
+
